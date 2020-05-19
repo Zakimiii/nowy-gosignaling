@@ -65,6 +65,10 @@ func main() {
   var port string
   port = os.Getenv("PORT")//, _ := strconv.Atoi(os.Args[1])
 
+  if port == "" {
+    log.Fatal("$PORT must be set")
+  }
+
   var addr = flag.String("addr", ":" + /*strconv.Itoa(*/port/*)*/, "The listen port of the application.")
   flag.Parse()
 

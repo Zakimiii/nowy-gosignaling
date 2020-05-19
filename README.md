@@ -1,2 +1,1 @@
 # Nowy-GoSignaling
-
